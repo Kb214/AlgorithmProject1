@@ -10,8 +10,6 @@ DoublyLinkedList::DoublyLinkedList()
 }
 
 
-
-
 DoublyLinkedList::~DoublyLinkedList() 
 {
 
@@ -62,28 +60,39 @@ void DoublyLinkedList::displayDoublyLinkedList()
 
 void DoublyLinkedList::drawDoublyLinkedList()
 {
-  // CODE TO BE ADDED for Project 1
-  //	Might reuse displayDoublyLinkedList()
+ 
+  Node* tempNode = head;
+
+  while(tempNode != NULL){
+	cout << "[address:" << tempNode 
+	<< ", prev:" << tempNode->prev 
+	<< ", value: " << tempNode->value 
+	<< ", next: " << tempNode->next << "]\n";
+
+	tempNode = tempNode->next;
+  }
+
 }
 
 
 bool DoublyLinkedList::isPalindrome()
 {
-  // CODE TO BE ADDED for Project 1
-   
+	
+
+
 }
 
-void DoublyLinkedList::split(int n) // n is the number of even partitions
-{
-  // CODE TO BE ADDED for Project 1
+// void DoublyLinkedList::split(int n) // n is the number of even partitions
+// {
+//   // CODE TO BE ADDED for Project 1
   
-}
+// }
 
-void DoublyLinkedList::addNewNodeBeforeTargetNode(Node* newNode, int val)
-{
-  // CODE TO BE ADDED for Project 1
+// void DoublyLinkedList::addNewNodeBeforeTargetNode(Node* newNode, int val)
+// {
+//   // CODE TO BE ADDED for Project 1
   
-}
+// }
 
 #endif
 

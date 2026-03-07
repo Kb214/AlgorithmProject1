@@ -14,7 +14,7 @@ public:
 	void displayDoublyLinkedList();
 	bool isPalindrome();
 	void split(int n);
-       void drawDoublyLinkedList();
+    void drawDoublyLinkedList();
 	void addNewNodeBeforeTargetNode(Node* newNode, int val);
 
 private:

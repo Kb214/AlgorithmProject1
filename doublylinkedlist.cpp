@@ -77,8 +77,30 @@ void DoublyLinkedList::drawDoublyLinkedList()
 
 bool DoublyLinkedList::isPalindrome()
 {
-	
 
+	Node* headnode = head;
+	Node* tailnode = tail;
+
+	
+	if(headnode == NULL && tailnode == NULL){
+		return true;
+	}
+
+	while(headnode != tailnode && headnode != tailnode->next){
+		
+
+		if(headnode->value != tailnode->value){
+
+			return false;
+		}
+
+		
+		headnode->next; 
+		tailnode->prev;
+
+	}
+
+	return true;
 
 }
 

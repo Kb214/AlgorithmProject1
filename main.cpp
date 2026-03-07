@@ -42,6 +42,5 @@ int main()
 
 	cout << Dll_2.isPalindrome() << endl;
 
-	system("PAUSE");
 	return 0;
 }

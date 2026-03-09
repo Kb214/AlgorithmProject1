@@ -3,7 +3,9 @@
 using namespace std;
 
 #include "Node.h"
+#include "Node.cpp"
 #include "doublylinkedlist.h"
+#include "doublylinkedlist.cpp"
 
 int main()
 {

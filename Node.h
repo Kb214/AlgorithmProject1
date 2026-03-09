@@ -1,5 +1,7 @@
-#ifndef NODE_H
-#define NODE_H
+// #ifndef NODE_H
+// #define NODE_H
+#pragma once
+
 
 #include <iostream>
 using namespace std;
@@ -19,4 +21,4 @@ class Node {
 
 };
 
-#endif
+// #endif

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "doublylinkedlist.h"
+#include "doublylinkedlist.cpp"
 
 int main()
 {

@@ -1,5 +1,5 @@
-#ifndef NODE_CPP
-#define NODE_CPP
+// #ifndef NODE_CPP
+// #define NODE_CPP
 
 #include "Node.h"
 Node::Node()
@@ -21,4 +21,4 @@ Node::~Node()
 	
 }
 
-#endif
+// #endif

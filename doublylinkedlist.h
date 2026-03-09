@@ -1,5 +1,6 @@
-#ifndef DOUBLYLINKEDLIST_H
-#define DOUBLYLINKEDLIST_H
+// #ifndef DOUBLYLINKEDLIST_H
+// #define DOUBLYLINKEDLIST_H
+#pragma once
 #include <iostream>
 #include "Node.h"
 
@@ -22,7 +23,7 @@ private:
 	Node* tail;
 
 };
-#endif
+// #endif
 
 // complete the following methods in the doubly linked list class.
 

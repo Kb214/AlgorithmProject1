@@ -94,9 +94,9 @@ bool DoublyLinkedList::isPalindrome()
 			return false;
 		}
 
+		headnode = headnode->next;
+		tailnode = tailnode->prev;
 		
-		headnode->next; 
-		tailnode->prev;
 
 	}
 
@@ -104,11 +104,48 @@ bool DoublyLinkedList::isPalindrome()
 
 }
 
-// void DoublyLinkedList::split(int n) // n is the number of even partitions
-// {
-//   // CODE TO BE ADDED for Project 1
+void DoublyLinkedList::split(int n) // n is the number of even partitions
+{	
+ 	Node* headnode = head;
+
+	//checks size of list
+	int size = 0;
+	while(headnode != NULL){
+
+		size++;
+		headnode = headnode->next;
+	}
+	headnode = head;	
+
+	//divides the size of the list 
+	int div = size/n;
+
+
+	if(n<1 || n>size || size % n !=0 ){
+
+		std::cout << "Cannot be processed\n";
+		return;
+		
+	}
+	
+
+	for(int i = 0; i < n; i++){
+
+		for(int j=0; j<div; j++){
+
+			std::cout << headnode->value;
+			headnode = headnode->next;
+
+			std::cout << "  ";
+		}
+
+		std::cout << "\n";
+
+	}
+	
+	
   
-// }
+}
 
 // void DoublyLinkedList::addNewNodeBeforeTargetNode(Node* newNode, int val)
 // {

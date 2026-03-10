@@ -1,3 +1,14 @@
+// Spring 2026
+// Project 1: Doubly Linked List
+// Due Date: March 10, 2026, Tuesday
+// Name: KARLEIGH BRANSCOMB
+// ID (Last 4 Digits):
+// Description of the Program (2-3 sentences):
+// Date Written: 3/9/26
+// Date Revised: 3/6/26
+
+
+
 #ifndef DOUBLYLINKEDLIST_CPP
 #define DOUBLYLINKEDLIST_CPP
 

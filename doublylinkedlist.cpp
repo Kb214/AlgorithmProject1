@@ -1,5 +1,5 @@
-// #ifndef DOUBLYLINKEDLIST_CPP
-// #define DOUBLYLINKEDLIST_CPP
+#ifndef DOUBLYLINKEDLIST_CPP
+#define DOUBLYLINKEDLIST_CPP
 
 #include "doublylinkedlist.h"
 
@@ -147,11 +147,27 @@ void DoublyLinkedList::split(int n) // n is the number of even partitions
   
 }
 
-// void DoublyLinkedList::addNewNodeBeforeTargetNode(Node* newNode, int val)
-// {
+void DoublyLinkedList::addNewNodeBeforeTargetNode(Node* newNode, int val){
+Node *target = head; 
+	Node *prevNode = target;
+	while(target != NULL){
 
+		
+		if(target->value == val){
+			target->prev = newNode;
+            prevNode->next = newNode;
+            newNode->prev = prevNode;
+            newNode->next = target;
+			break;
+		}
+
+		prevNode = target;
+		target = target->next;
   
-// }
+}
 
-// #endif
+
+}
+	
+#endif
 
